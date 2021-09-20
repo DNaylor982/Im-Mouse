@@ -1,0 +1,234 @@
+/* photo background / logo / navbar */
+header {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 200px;
+}
+
+#navbarMenu {
+    display: none;
+
+}
+
+#logoContainer {
+    height: 200px;
+}
+
+.logo {
+    width: 70%;
+    margin-left: 40px;
+}
+
+#navbarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#burguerMenu {
+
+    display: contents;
+    
+}
+
+.fa-bars {
+    color: #4B8F8C;
+    font-size: 5em;
+    
+}
+
+/* recherche */
+#searchTitleDisplay{
+
+    margin-top: 1em;
+}
+#search {
+
+    flex-direction: column;
+}
+
+.searchLabel {
+    margin-bottom: 0.5em;
+}
+
+#bloc1,
+#bloc2,
+#bloc3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F9F9F9;
+    border: 2px solid #707070;
+    border-radius: 5px;
+    padding: 2em;
+    margin: 1em;
+}
+
+/* galerie */
+
+#galerryTitleDisplay {
+
+    display: none;
+}
+
+#galerryContainer {
+    display: none;
+}
+
+/* galerie mobile */
+#caroussel {
+    width: auto;
+    margin-top: 2em;
+    display: contents;
+    overflow: hidden;
+    /*masquage de la scrollbar*/
+    border: 2px solid #030303;
+}
+
+.photos {
+    margin-top: 2em;
+    display: flex;
+    animation-duration: 25s;
+    /*durée du cycle*/
+    animation-name: immoPhoto;
+    animation-iteration-count: infinite;
+    /*durée de l'animation*/
+}
+
+@keyframes immoPhoto {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-480px);
+    }
+
+    20% {
+        transform: translateX(-960px);
+    }
+
+    30% {
+        transform: translateX(-1440px);
+    }
+
+    40% {
+        transform: translateX(-1920px);
+    }
+
+    50% {
+        transform: translateX(-2400px);
+    }
+
+    60% {
+        transform: translateX(-2880px);
+    }
+
+    70% {
+        transform: translateX(-3360px);
+    }
+
+    80% {
+        transform: translateX(-3840px);
+    }
+
+    90% {
+        transform: translateX(-4320px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Formulaire estimation */
+#estimateTitle {
+
+    display: none;
+}
+
+#estimate {
+    display: none;
+}
+
+/* map + adresse/horaires + réseaux sociaux */
+
+#containerTitle {
+    text-align: center;
+    margin-top: 3em;
+    color: #4B8F8C;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#locationHoursContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-top: none;
+    margin-bottom: 2em;
+}
+
+#mapContainer {
+    margin-top: 1.5em;
+}
+
+#mapImg {
+    width: 90%;
+}
+
+#hoursText {
+    margin: 0.5em 1.5em;
+}
+
+/* Infos utiles */
+#containerTitle {
+
+    margin-bottom: 0%;
+}
+
+#hoursTitle {
+    margin-bottom: 1em;
+}
+
+#hoursText {
+    margin-bottom: 2em;
+    font-size: 1em;
+    margin-top: 0%;
+}
+
+/* Réseaux Sociaux */
+#socialTitle {
+
+    font-size: 1.5em;
+
+}
+
+#socialIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-instagram,
+.fa-facebook-square,
+.fa-twitter-square {
+    font-size: 2em;
+
+}
+
+/* Footer */
+
+#footerContainer {
+    height: 50px;
+}
+
+.footerItem {
+    font-size: 0.7em;
+}

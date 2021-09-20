@@ -1,0 +1,150 @@
+<!Doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1,0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<title>Im'mouse</title>
+	<link rel="stylesheet" href="assets/CSS/style.css">
+	<link rel="stylesheet" media="screen and (max-width: 480px)" href="assets/CSS/responsive.css" />
+	<script src="https://kit.fontawesome.com/46093d6067.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- photo background / logo / navbar -->
+	<header>
+		<div id="logoContainer">
+			<a href="#"><img src="assets/img/logo.png" alt="LogoImMouse" class="logo"></a>
+		</div>
+		<nav id="navbarContainer">
+			<div id="burguerMenu"><i class="fas fa-bars"></i></div>
+			<div id="navbarMenu">
+				<a href="#" class="navbarButton">Achat/Vente</a>
+				<a href="#" class="navbarButton">Location</a>
+				<a href="#" class="navbarButton">Gestion Locative</a>
+				<a href="#" class="navbarButton">Programme Neuf</a>
+				<a href="#estimateTitle" class="navbarButton">Estimation</a>
+				<a href="#" class="navbarButton">Contact</a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div id=searchTitleDisplay>
+			<a href="#" id=searchTitle>QUE RECHERCHEZ VOUS ?</a>
+		</div>
+		<!-- recherche de biens -->
+		<section id=search>
+			<!-- recherche de biens -->
+			<div id=bloc1>
+				<label for="choice1" class="searchLabel">Le type de bien :</label>
+				<select name="choice1" id="choice1">
+					<option value="house">Maison</option>
+					<option value="apartment">Appartement</option>
+					<option value="field">Terrain</option>
+				</select>
+			</div>
+			<div id=bloc2>
+				<label for="location" class="searchLabel">Le secteur :</label>
+				<input type="text" name="location" id="location" placeholder="ville/région" />
+			</div>
+			<div id=bloc3>
+				<label for="budget" class="searchLabel">Pour quel budget :</label>
+				<select name="budget" id="budget">
+					<option value="oneSelection">inf. à 100 000 €</option>
+					<option value="twoSelection">entre 100 000 et 200 000 €</option>
+					<option value="threeSelection">plus de 200 000 €</option>
+				</select>
+			</div>
+			<button type="submit" class="submitButton">Valider</a>
+		</section>
+		<!-- galerie d'images -->
+		<div id="galerryTitleDisplay"><a href="#" id="galerryTitle">NOS BIENS DISPONIBLES</a></div>
+		<section id="galerryContainer">
+			<div class="imgGalleryDisplay" id="imgGallery1"><a href="#" class="textGallery">Appartement/40m2/500€</a>
+			</div>
+			<div class="imgGalleryDisplay" id="imgGallery2"><a href="#" class="textGallery">Appartement/60m2/700€</a>
+			</div>
+			<div class="imgGalleryDisplay" id="imgGallery3"><a href="#" class="textGallery">Maison/130m2/1300€</a>
+			</div>
+			<div class="imgGalleryDisplay" id="imgGallery4"><a href="#" class="textGallery">Appartement/80m2/1000€</a>
+			</div>
+			<div class="imgGalleryDisplay" id="imgGallery5"><a href="#" class="textGallery">Appartement/50m2/800€</a>
+			</div>
+			<div class="imgGalleryDisplay" id="imgGallery6"><a href="#" class="textGallery">Maison/120m2/1250€</a>
+			</div>
+			<div class="imgGalleryDisplay" id="imgGallery7"><a href="#" class="textGallery">Maison/220m2/1950€</a>
+			</div>
+			<div class="imgGalleryDisplay" id="imgGallery8"><a href="#" class="textGallery">Maison/100m2/1120€</a>
+			</div>
+		</section>
+		<!-- galerie image mobile -->
+		<section id="caroussel">
+			<div class="photos">
+				<img src="assets/img/caroussel/photo1.jpg" alt="appartement">
+				<img src="assets/img/caroussel/photo2.jpg" alt="appartement">
+				<img src="assets/img/caroussel/photo3.jpg" alt="appartement">
+				<img src="assets/img/caroussel/photo4.jpg" alt="appartement">
+				<img src="assets/img/caroussel/photo5.jpg" alt="appartement">
+				<img src="assets/img/caroussel/photo6.jpg" alt="maison">
+				<img src="assets/img/caroussel/photo7.jpg" alt="appartement">
+				<img src="assets/img/caroussel/photo8.jpg" alt="maison">
+				<img src="assets/img/caroussel/photo9.jpg" alt="appartement">
+				<img src="assets/img/caroussel/photo10.jpg" alt="appartement">
+			</div>
+		</section>
+		<!-- formulaire estimation -->
+		<h3 id="estimateTitle">BESOIN D'UNE ESTIMATION ?</h3>
+		<section id=estimate>
+			<div id="estimateDisplayBloc"><label for="name">Nom :</label><input type="text" name="name" id="name"
+					placeholder="votre nom" /></div>
+			<div id="estimateDisplayBloc"><label for="firstName">Prénom :</label><input type="text" name="firstName"
+					id="firstName" placeholder="votre prénom" /></div>
+			<div id="estimateDisplayBloc"><label for="choice">Type de bien :</label>
+				<select name="choice" id="choice">
+					<option value="house">Maison</option>
+					<option value="apartment">Appartement</option>
+					<option value="field">Terrain</option>
+				</select>
+			</div>
+			<div id="estimateDisplayBloc"><label for="phoneNumber">Téléphone :</label>
+				<input type="texte" name="phoneNumber" id="phoneNumber" placeholder="votre téléphone" />
+			</div>
+			<div id="estimateButtonContainer"><button type="submit" id="estimateSubmitButton">Envoyer</div>
+		</section>
+		<!-- map + adress/horaires + réseaux sociaux -->
+		<p id=containerTitle>INFOS PRATIQUES</p>
+		
+		<section id="locationHoursContainer">
+			<div id=mapContainer><p id="adressTitle">IM'MOUSE - 7 RUE DES FAUSSETS - BORDEAUX
+			</p><img src="assets/img/map.png" alt="MapLocalisationAgence" id=mapImg>
+			</div>
+			<div id="adressHoursContainer">
+				<h3 id="hoursTitle">HORAIRES</h3>
+				<p id="hoursText"><span class="boldDays">Le Lundi</span> : de 14h à 19h <br> <span class="boldDays">Du Mardi au Vendredi</span>
+					: de 9h à 12h et de 14h à 19h <br> <span class="boldDays">Fermé le samedi</span>
+				</p>
+			</div>
+		</section>
+		<!-- Réseaux Sociaux -->
+		<section id="socialBloc">
+			<h3 id="socialTitle">SUIVEZ-NOUS</h3>
+			<div id="socialIcons">
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-facebook-square"></i></a>
+				<a href="#"><i class="fab fa-twitter-square"></i></a>
+			</div>
+		</section>
+	</main>
+	<!-- mentions légales -->
+	<footer id="footerContainer">
+		<div><a class="footerItem" href="#">Im'Mouse ©</a></div>
+		<div><a class="footerItem" href="#">Mentions Legales</a></div>
+		<div><a class="footerItem" href="#">Gestion des Cookies</a></div>
+		<div><a class="footerItem" href="#">Contact</a></div>
+	</footer>
+</body>
+
+</html>

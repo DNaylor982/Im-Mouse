@@ -1,0 +1,57 @@
+/*body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}*/
+
+#caroussel{
+    width: 480px;
+    overflow: hidden; /*masquage de la scrollbar*/
+    border: 2px solid #030303;
+}
+
+.photos{
+    display: flex;
+    animation-duration: 25s; /*durée du cycle*/
+    animation-name: immoPhoto;
+    animation-iteration-count: infinite; /*durée de l'animation*/
+}
+
+@keyframes immoPhoto {
+
+      0% {
+         transform: translateX(0);
+     }
+     10% {
+      transform: translateX(-480px);
+   }
+     20% {
+        transform: translateX(-960px);
+     }
+     30% {
+      transform: translateX(-1440px);
+   }
+     40% {
+        transform: translateX(-1920px);
+     }
+     50% {
+      transform: translateX
+      (-2400px);
+   }
+     60% {
+        transform: translateX(-2880px);
+     }
+     70% {
+      transform: translateX(-3360px);
+   }
+     80% {
+        transform: translateX(-3840px);
+     }
+     90% {
+      transform: translateX(-4320px);
+   }
+     100% {
+        transform: translateX(0);
+     }
+}
